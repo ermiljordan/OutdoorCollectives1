@@ -33,7 +33,7 @@ get_header();
 	</section>
 	<section class="zypher-tents container">
 		<h2>Our Tents</h2>
-		<div class="zypher-tents">
+		<ul>
 		<?php 
 				$args = array(
 					'posts_per_page' 		=> 3,
@@ -45,12 +45,17 @@ get_header();
 				);
 				?>
 				<?php	$product_posts = get_posts( $args );?>
-				<?php foreach ($product_posts as $post )  setup_postdata( $post );  /// FIX THIS PART?>
-			<div>
-				<?php the_post_thumbnail( 'Medium' ); ?>
-	
-			</div>
-		</div>
+				<?php foreach ($product_posts as $post ) : (setup_postdata( $post ));  /// FIX THIS PART?>
+				<li>
+				<div class="thumbnail-tents">
+					<?php the_post_thumbnail( '' ); ?>
+				</div>
+				<div>
+				<h3><a class="post-title"> <?php the_title(); ?></h3>
+				<p><?php echo $post->post ?></p>
+				</div>
+				<?php endforeach; wp_reset_postdata(); ?>
+		</ul>
 	</section>
 
 <?php
