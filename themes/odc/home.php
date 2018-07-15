@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for home page
+ * Template for home-page
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -45,18 +45,22 @@ get_header();
 				);
 				?>
 				<?php	$product_posts = get_posts( $args );?>
-				<?php foreach ($product_posts as $post ) : (setup_postdata( $post ));  /// FIX THIS PART?>
+				<?php foreach ($product_posts as $post ) : (
+							setup_postdata( $post ));  /// FIX THIS PART?>
 				<li>
 				<div class="thumbnail-tents">
 					<?php the_post_thumbnail( '' ); ?>
 				</div>
 				<div>
-				<h3><a class="post-title"> <?php the_title(); ?></h3>
-				<p><?php echo $post->post ?></p>
+				<h3><?php the_title(); ?></h3>
+				<?php the_content(); ?>
+				<?php
+    endforeach; 
+    wp_reset_postdata(); ?>
 				</div>
-				<?php endforeach; wp_reset_postdata(); ?>
 		</ul>
 	</section>
+	<section class="stary-nights"></section>
 
 <?php
 get_sidebar();
