@@ -31,11 +31,28 @@ get_header();
 			</p>
 		</div>
 	</section>
-	<section class="tents">
-		<div class="container">
-			
+	<section class="zypher-tents container">
+		<h2>Our Tents</h2>
+		<div class="zypher-tents">
+		<?php 
+				$args = array(
+					'posts_per_page' 		=> 3,
+					'orderby'						=> 'date',
+					'order'							=> 'DESC',
+					'post_type'					=> 'post',
+					'post_status'				=> 'publish',
+					'suppress_filters' 	=> true
+				);
+				?>
+				<?php	$product_posts = get_posts( $args );?>
+				<?php foreach ($product_posts as $post )  setup_postdata( $post );  /// FIX THIS PART?>
+			<div>
+				<?php the_post_thumbnail( 'Medium' ); ?>
+	
+			</div>
 		</div>
 	</section>
+
 <?php
 get_sidebar();
 get_footer();
