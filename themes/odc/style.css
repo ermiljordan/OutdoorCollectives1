@@ -838,18 +838,6 @@ object {
 /*--------------------------------------------------------------
 # front-page
 --------------------------------------------------------------*/
-.hero-banner {
-  background-image: url("images/ocImages/camping.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .home .zypher-tents ul {
   display: -webkit-box;
   display: -ms-flexbox;

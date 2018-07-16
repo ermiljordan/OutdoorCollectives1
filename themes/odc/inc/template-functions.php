@@ -42,9 +42,16 @@ add_action( 'wp_head', 'odc_pingback_header' );
 function odc_dynamic_css() {
 	switch(true) {
 		case is_page( 'Home' ):
+		$hero = CFS()->get('hero_background');
 		$urlHome = CFS()->get('stary_background');
 		$adventure = CFS()->get('adventure_photo');
 		$custom_css = "
+					.hero-banner {
+						background:
+						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+						url({$hero}) no-repeat center bottom;
+						background-size: cover, cover; 
+					}
 					.stary-nights {
 					background:
 					linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),

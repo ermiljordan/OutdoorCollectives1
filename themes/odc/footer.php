@@ -24,7 +24,14 @@
 						<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
 					</li>
 				</ul>
+			</div><!--Social media-->
+			<div class="brand">
+				<p>Outdoor Collective Inc. © 2018</p>
 			</div>
+			<div class="footer-logo">
+				<img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg">
+			</div>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
