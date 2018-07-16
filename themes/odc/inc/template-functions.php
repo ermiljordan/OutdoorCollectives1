@@ -49,13 +49,14 @@ function odc_dynamic_css() {
 					background:
 					linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
 					url({$urlHome}) no-repeat center bottom;
-					background-size: cover, cover;
+					background-size: cover, cover; 
+				}
 					.adventure-photos {
 						background:
 						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
 						url({$adventure}) no-repeat center bottom;
 						background-size: cover, cover;	
-				}";
+				};";
 					break;
 					default:
 					$custom_css = "";
@@ -64,29 +65,3 @@ function odc_dynamic_css() {
 	wp_add_inline_style('odc-style', $custom_css);
 }
 add_action('wp_enqueue_scripts', 'odc_dynamic_css');
-
-// function odc_dynamic_css() {
-// 	if ( ! is_page ('Home') ) {
-// 		return;
-// 	}
-// 	$image = CFS()->get ('stary_background');
-// 	$adventure = CFS()->get ('adventure_photo');
-// 	if ( ! $image || ! $adventure) {
-// 		return;
-// 	}
-// 	$hero_css = "
-// 		.stary-nights {
-// 				background:
-// 				linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-// 				url({$image}) no-repeat center bottom;
-// 				background-size: cover, cover;
-// 		.adventure-photos {
-// 			background:
-// 			linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-// 			url({$adventure}) no-repeat center bottom;
-// 			background-size: cover, cover;
-// 		}";
-// 		wp_add_inline_style('odc-style', $hero_css);
-// }
-// add_action('wp_enqueue_scripts', 'odc_dynamic_css');
-

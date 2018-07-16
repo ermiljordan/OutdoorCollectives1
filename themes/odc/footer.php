@@ -15,17 +15,16 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'odc' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'odc' ), 'WordPress' );
-				?>
-			</a> -->
-			<!-- <span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'odc' ), 'odc', '<a href="http://zephyrairframetent.com/">ermil</a>' );
-				?> -->
+			<div class="social-md">
+				<h3 class="media">Follow Us</h3>
+				<ul>
+					<li class="icon-media">
+						<a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
