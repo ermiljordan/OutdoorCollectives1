@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for home-page
+ * Template for front-page
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -14,7 +14,6 @@
 
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
       <section class="hero-banner">
@@ -60,8 +59,15 @@ get_header();
 				</div>
 		</ul>
 	</section>
-	<section class="stary-nights"></section>
-
+	<section class="stary-nights">
+	<?php echo CFS()->get( 'stary_captions' ); ?>
+	</section>
+	<section class="adventure-photos">
+	<div>
+		<?php echo CFS()->get ('adventure_caption' ); ?>
+		<?php echo CFS()->get ( 'adventure_content' ); ?>
+	</div>
+	</section>
 <?php
 get_sidebar();
 get_footer();

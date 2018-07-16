@@ -40,19 +40,53 @@ add_action( 'wp_head', 'odc_pingback_header' );
  * Make hero image customizable through CFS field or featured image.
  */
 function odc_dynamic_css() {
-	if ( ! is_page_template ('home.php') ) {
-		return;
+	switch(true) {
+		case is_page( 'Home' ):
+		$urlHome = CFS()->get('stary_background');
+		$adventure = CFS()->get('adventure_photo');
+		$custom_css = "
+					.stary-nights {
+					background:
+					linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+					url({$urlHome}) no-repeat center bottom;
+					background-size: cover, cover;
+					.adventure-photos {
+						background:
+						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+						url({$adventure}) no-repeat center bottom;
+						background-size: cover, cover;	
+				}";
+					break;
+					default:
+					$custom_css = "";
+					break;
 	}
-	$image = CFS()->get ('star_background');
-	if ( ! $image ) {
-		return;
-	}
-	$hero_css = ".stary-nights {
-		background:
-		linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-		url({$image}) no-repeat center bottom;
-		background-size: cover, cover;
-		}";
-		wp_add_inline_style('odc-style', $hero_css);
+	wp_add_inline_style('odc-style', $custom_css);
 }
 add_action('wp_enqueue_scripts', 'odc_dynamic_css');
+
+// function odc_dynamic_css() {
+// 	if ( ! is_page ('Home') ) {
+// 		return;
+// 	}
+// 	$image = CFS()->get ('stary_background');
+// 	$adventure = CFS()->get ('adventure_photo');
+// 	if ( ! $image || ! $adventure) {
+// 		return;
+// 	}
+// 	$hero_css = "
+// 		.stary-nights {
+// 				background:
+// 				linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+// 				url({$image}) no-repeat center bottom;
+// 				background-size: cover, cover;
+// 		.adventure-photos {
+// 			background:
+// 			linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+// 			url({$adventure}) no-repeat center bottom;
+// 			background-size: cover, cover;
+// 		}";
+// 		wp_add_inline_style('odc-style', $hero_css);
+// }
+// add_action('wp_enqueue_scripts', 'odc_dynamic_css');
+

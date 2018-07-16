@@ -12,6 +12,7 @@
  * @package outdoorCollective
  */
 
+ 
 get_header();
 ?>
 
