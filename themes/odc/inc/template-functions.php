@@ -43,6 +43,7 @@ function odc_dynamic_css() {
 	switch(true) {
 		case is_page( 'Home' ):
 		$hero = CFS()->get('hero_background');
+		$zypher = CFS()->get('zypher_air_frame_photo');
 		$urlHome = CFS()->get('stary_background');
 		$adventure = CFS()->get('adventure_photo');
 		$custom_css = "
@@ -50,8 +51,13 @@ function odc_dynamic_css() {
 						background:
 						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
 						url({$hero}) no-repeat center bottom;
+						background-size: cover, cover; 	
+					}
+					.about-zypher {
+						background:
+						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+						url({$zypher}) no-repeat center bottom;
 						background-size: cover, cover; 
-						
 					}
 					.stary-nights {
 					background:
