@@ -55,7 +55,7 @@ get_header();
 				<div class="thumbnail-tents">
 					<?php the_post_thumbnail( '' ); ?>
 				</div>
-				<div>
+				<div class="content">
 				<h3><?php the_title(); ?></h3>
 				<?php the_content(); ?>
 				<?php
