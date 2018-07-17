@@ -16,7 +16,6 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<div class="social-md">
-				<h3 class="media">Follow Us</h3>
 				<ul>
 					<li class="icon-media">
 						<a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
@@ -25,11 +24,10 @@
 					</li>
 				</ul>
 			</div><!--Social media-->
-			<div class="brand">
-				<p>Outdoor Collective Inc. © 2018</p>
-			</div>
+
 			<div class="footer-logo">
 				<img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg">
+				<p>Outdoor Collective Inc. © 2018</p>
 			</div>
 
 		</div><!-- .site-info -->
