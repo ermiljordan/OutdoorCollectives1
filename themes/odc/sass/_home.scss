@@ -1,11 +1,29 @@
-.home .hero-banner {
-  height: 100vh;
+.home 
+.hero-banner {
+  height: 100%;
+  width: max-width;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.home .zypher-tents ul {
+.logo-banner {
+  display: flex;
+  justify-content: center;
+}
+.wpcf7-form {
+  display: flex;
+  .wpcf7-email {
+    width: 100%;
+  }
+  .wpcf7-submit {
+    margin-top: 1.7rem;
+  }
+}
+img.logo-circle {
+  height: 15rem;
+  width: auto;
+}
+.zypher-tents ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;

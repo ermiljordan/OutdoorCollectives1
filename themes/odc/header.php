@@ -16,15 +16,14 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'odc' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' )); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
@@ -39,7 +38,6 @@
 						'menu_id'        => 'primary-menu',
 					) );
 					?>
-					<?php get_search_form(); ?>
 				</div><!-- #header -->	
 			</div><!-- #header-background -->
 		</nav><!-- #site-navigation -->

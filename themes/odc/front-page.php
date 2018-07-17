@@ -15,11 +15,17 @@
 get_header();
 ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main" role="main">
       <section class="hero-banner">
-				<img class="logo-circle" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveMiddle.svg" alt="outdoor collective">
+				<div class="logo-sub">
+					<div class="logo-banner">
+						<img class="logo-circle" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveMiddle.svg" alt="outdoor collective">
+					</div>
+					<div class="newsletter">
 						<?php echo do_shortcode('[contact-form-7 id="57" title="newsletter"]'); ?>
-      </section> 
+					</div><!--NEWS LETTER-->
+				</div><!--Logo banner-->
+      </section><!--HERO BANNER--> 
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->

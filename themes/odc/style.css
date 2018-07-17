@@ -41,6 +41,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/********************************************/
+/*              MEDIA QUERY                 */
+/********************************************/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -838,8 +841,10 @@ object {
 /*--------------------------------------------------------------
 # front-page
 --------------------------------------------------------------*/
-.home .hero-banner {
-  height: 100vh;
+.home
+.hero-banner {
+  height: 100%;
+  width: max-width;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +855,28 @@ object {
       -ms-flex-align: center;
           align-items: center; }
 
-.home .zypher-tents ul {
+.logo-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.wpcf7-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .wpcf7-form .wpcf7-email {
+    width: 100%; }
+  .wpcf7-form .wpcf7-submit {
+    margin-top: 1.7rem; }
+
+img.logo-circle {
+  height: 15rem;
+  width: auto; }
+
+.zypher-tents ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,7 +887,7 @@ object {
   margin-bottom: 0;
   margin-left: 0;
   padding-left: 0; }
-  .home .zypher-tents ul li {
+  .zypher-tents ul li {
     border: 1px solid #e1e1e1;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 32%;
@@ -890,12 +916,13 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 img.logo-header {
-  height: 50px; }
+  height: 70px;
+  margin-top: .3rem; }
 
 .container {
   max-width: 100%;
