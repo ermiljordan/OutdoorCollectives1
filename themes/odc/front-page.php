@@ -17,7 +17,8 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
       <section class="hero-banner">
-        <img class="logo-circle" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveMiddle.svg" alt="outdoor collective">
+				<img class="logo-circle" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveMiddle.svg" alt="outdoor collective">
+						<?php echo do_shortcode('[contact-form-7 id="57" title="newsletter"]'); ?>
       </section> 
 			
 		</main><!-- #main -->
