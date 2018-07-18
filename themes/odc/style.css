@@ -870,15 +870,32 @@ object {
   margin-top: 5rem;
   margin-bottom: 2rem; }
 
+.wpcf7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .wpcf7-form p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .wpcf7-form p .wpcf7-email {
-    width: 250px;
+    width: 0;
+    opacity: 0;
+    border: 0;
     border-radius: 25px;
     text-align: center;
-    color: #de4d61; }
+    color: #de4d61;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .wpcf7-form p .wpcf7-email.search-visible {
+      opacity: 1;
+      width: 3rem; }
+  .wpcf7-form p .wpcf7-submit {
+    opacity: 0; }
 
 .wpcf7-form-control-wrap {
   width: 90%; }
