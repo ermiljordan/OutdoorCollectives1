@@ -26,7 +26,7 @@
 			</div><!--Social media-->
 
 			<div class="footer-logo">
-				<img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg">
+				<?php echo CFS()->get('faq'); ?>
 				<p>Outdoor Collective Inc. © 2018</p>
 			</div>
 

@@ -56,7 +56,7 @@ get_header();
 					<?php the_post_thumbnail( '' ); ?>
 				</div>
 				<div class="content">
-				<h3><?php the_title(); ?></h3>
+				<h3 class=fancy><span><?php the_title(); ?></span></h3>
 				<?php the_content(); ?>
 				<?php
     endforeach; 

@@ -916,25 +916,26 @@ img.logo-circle {
 .content p {
   color: black; }
 
-.stary-nights h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-size: 1rem;
-  height: 15vh; }
+.stary-nights {
+  border-bottom: 1px solid white; }
+  .stary-nights h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    height: 15vh; }
 
 .about-zypher {
   border-top: 3px solid white; }
   .about-zypher h2 {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-top: 2.5rem;
     margin: 0 auto; }
   .about-zypher p {
     max-width: 90%; }
@@ -960,6 +961,8 @@ img.logo-header {
   padding: 0 10%; }
 
 h2 {
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
   text-align: center;
   color: #A6B49B; }
 
@@ -967,12 +970,39 @@ p {
   padding: 0 1rem 1rem;
   margin: 0 auto;
   color: white;
-  text-align: center; }
+  text-align: center;
+  line-height: 1; }
 
 h3 {
   color: #2a373c;
   text-align: center;
   text-transform: uppercase; }
+
+.fancy {
+  line-height: 0.5;
+  text-align: center; }
+
+.fancy span {
+  display: inline-block;
+  position: relative; }
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 55px; }
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px; }
 
 .site-info {
   background-color: #2A373C;
