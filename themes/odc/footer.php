@@ -26,7 +26,6 @@
 			</div><!--Social media-->
 
 			<div class="footer-logo">
-				<?php echo CFS()->get('faq'); ?>
 				<p>Outdoor Collective Inc. © 2018</p>
 			</div>
 

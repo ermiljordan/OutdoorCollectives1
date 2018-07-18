@@ -4,12 +4,18 @@
   padding: 0 10%;
 }
 h2 {
-  padding-bottom: 1.5rem;
+  font-family:'Novecento';
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
   color: #A6B49B;
 }
 p {
+  font-family: 'Novecento sans';
+  font-weight: normal;
+  font-style: normal;
   padding: 0 1rem 1rem;
   margin: 0 auto;
   color: white;
@@ -17,6 +23,9 @@ p {
   line-height: 1;
 } 
   h3 {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-style: normal;
     color: #2a373c;
     text-align: center;
     text-transform: uppercase;
