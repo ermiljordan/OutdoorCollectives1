@@ -7,3 +7,19 @@ img.logo-footer {
   display: flex;
   margin: 0 auto;
 }
+.social-md {
+  align-items: center;
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.8rem;
+    height: 3.5rem;
+  }
+}
+.icon-media {
+  a {
+    color: white;
+    text-align: center;
+    margin-right: .8rem;
+  }
+}

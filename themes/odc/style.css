@@ -870,32 +870,15 @@ object {
   margin-top: 5rem;
   margin-bottom: 2rem; }
 
-.wpcf7 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .wpcf7-form p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .wpcf7-form p .wpcf7-email {
-    width: 0;
-    opacity: 0;
-    border: 0;
+    width: 250px;
     border-radius: 25px;
     text-align: center;
-    color: #de4d61;
-    -webkit-transition: .5s;
-    transition: .5s; }
-    .wpcf7-form p .wpcf7-email.search-visible {
-      opacity: 1;
-      width: 3rem; }
-  .wpcf7-form p .wpcf7-submit {
-    opacity: 0; }
+    color: #de4d61; }
 
 .wpcf7-form-control-wrap {
   width: 90%; }
@@ -938,7 +921,7 @@ img.logo-circle {
 
 .stary-nights {
   border-bottom: 1px solid white; }
-  .stary-nights h2 {
+  .stary-nights h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -954,15 +937,6 @@ img.logo-circle {
 
 .about-zypher {
   border-top: 3px solid white; }
-  .about-zypher h2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin: 0 auto; }
-  .about-zypher p {
-    max-width: 90%; }
-
-.adventure-photos h2 {
-  padding-bottom: 2rem; }
 
 .header-background {
   background-color: transparent; }
@@ -998,12 +972,17 @@ h2 {
   font-family: 'Novecento';
   font-weight: 600;
   font-style: normal;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  color: #A6B49B; }
+  color: #A6B49B;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 80%; }
 
 p {
+  max-width: 80%;
   font-family: 'Novecento sans';
   font-weight: normal;
   font-style: normal;
@@ -1057,6 +1036,21 @@ img.logo-footer {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
+
+.social-md {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .social-md ul {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.8rem;
+    height: 3.5rem; }
+
+.icon-media a {
+  color: white;
+  text-align: center;
+  margin-right: .8rem; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
