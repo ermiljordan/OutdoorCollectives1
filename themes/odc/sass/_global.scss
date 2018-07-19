@@ -2,6 +2,9 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 10%;
+  @include tablet {
+    padding: 0;
+  }
 }
 h2 {
   font-family:'Novecento';
@@ -15,6 +18,9 @@ h2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
   max-width: 80%;
+  @include tablet {
+    font-size: 2.4rem;
+  }
 }
 p {
   max-width: 80%;
@@ -26,6 +32,10 @@ p {
   color: white;
   text-align: center;
   line-height: 1;
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
 } 
   h3 {
     font-family: 'Merriweather';
@@ -34,6 +44,9 @@ p {
     color: #2a373c;
     text-align: center;
     text-transform: uppercase;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 
   // FANCY LINES
@@ -55,6 +68,9 @@ p {
     border-top: 1px solid black;
     top: 0;
     width: 55px;
+    @include tablet {
+      width: 100px;
+    }
   }
   .fancy span:before {
     right: 100%;
