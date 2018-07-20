@@ -62,6 +62,40 @@ p {
     }
   }
 
+
+
+
+  .wpcf7-form p{
+    display: flex;
+    .wpcf7-email {
+      width: 310px;
+      border-radius: 25px;
+      color: #de4d61; 
+      text-transform: uppercase;
+      padding-left: 2rem;
+    }
+  }
+  // .wpcf7-submit {
+  //   border-radius: 30px;
+  //   transform: translateX(-100%);
+  //   input[type="submit"] {
+  //     border: none;
+  //     background: #A6B49B;
+  //     color: white;
+  //   }
+  // }
+  .wpcf7-form-control-wrap {
+    width: 100%;
+  }
+  input.wpcf7-submit {
+    border-radius: 30px;
+    transform: translateX(-100%);
+    border: none;
+    background: #A6B49B;
+    color: white;
+    text-transform: uppercase;
+  }
+  
   // FANCY LINES
 
   // .fancy {

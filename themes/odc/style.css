@@ -874,19 +874,6 @@ object {
   margin-top: 5rem;
   margin-bottom: 2rem; }
 
-.wpcf7-form p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .wpcf7-form p .wpcf7-email {
-    width: 250px;
-    border-radius: 25px;
-    text-align: center;
-    color: #de4d61; }
-
-.wpcf7-form-control-wrap {
-  width: 90%; }
-
 img.logo-circle {
   height: 15rem;
   width: auto; }
@@ -1015,6 +1002,16 @@ img.logo-circle {
             align-items: center;
     height: 50vh; } }
 
+@media (min-width: 1240px) {
+  .adventure-photos {
+    max-width: 50%; } }
+
+@media (min-width: 1240px) {
+  .adventure-photos .right-caption {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background: #222222; } }
+
 .header-background {
   background-color: transparent; }
 
@@ -1102,6 +1099,29 @@ h3 {
   @media (min-width: 600px) {
     h3 {
       font-size: 1.5rem; } }
+
+.wpcf7-form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .wpcf7-form p .wpcf7-email {
+    width: 310px;
+    border-radius: 25px;
+    color: #de4d61;
+    text-transform: uppercase;
+    padding-left: 2rem; }
+
+.wpcf7-form-control-wrap {
+  width: 100%; }
+
+input.wpcf7-submit {
+  border-radius: 30px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border: none;
+  background: #A6B49B;
+  color: white;
+  text-transform: uppercase; }
 
 .site-info {
   background-color: #2A373C;

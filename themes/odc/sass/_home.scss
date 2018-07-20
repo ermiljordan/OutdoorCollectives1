@@ -20,21 +20,8 @@
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
-.wpcf7-form p{
-  display: flex;
-  .wpcf7-email {
-    width: 250px;
-    border-radius: 25px;
-    text-align: center;
-    color: #de4d61; 
-  }
-  // .wpcf7-submit {
 
-  // }
-}
-.wpcf7-form-control-wrap {
-  width: 90%;
-}
+
 img.logo-circle {
   height: 15rem;
   width: auto;
@@ -133,5 +120,16 @@ img.logo-circle {
     justify-content: center;
     align-items: center;
     height: 50vh;
+  }
+}
+.adventure-photos {
+  @include desktop {
+    max-width: 50%;
+  }
+  .right-caption {
+    @include desktop {
+      transform:translateX(100%);
+      background: #222222;
+    }
   }
 }

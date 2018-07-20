@@ -68,10 +68,10 @@ get_header();
 	<?php echo CFS()->get( 'stary_captions' ); ?>
 	</section>
 	<section class="adventure-photos">
-	<div>
+		<div class="right-caption">
 		<?php echo CFS()->get ('adventure_caption' ); ?>
 		<?php echo CFS()->get ( 'adventure_content' ); ?>
-	</div>
+		</div>
 	</section>
 <?php
 get_sidebar();
