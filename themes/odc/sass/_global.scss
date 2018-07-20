@@ -5,6 +5,9 @@
   @include tablet {
     padding: 0;
   }
+  @include desktop {
+    padding: 0 10%;
+  }
 }
 h2 {
   font-family:'Novecento';
@@ -21,8 +24,12 @@ h2 {
   @include tablet {
     font-size: 2.4rem;
   }
+  @include window {
+    font-size: 2rem;
+  }
 }
 p {
+  font-size: 15px;
   max-width: 80%;
   font-family: 'Novecento sans';
   font-weight: normal;
@@ -35,6 +42,12 @@ p {
   @include tablet {
     font-size: 1.5rem;
     line-height: 1.1;
+  }
+  @include window {
+    font-size: 1.2rem;
+  }
+  @include desktop {
+    font-size: 1.2rem;
   }
 } 
   h3 {
@@ -51,32 +64,32 @@ p {
 
   // FANCY LINES
 
-  .fancy {
-    line-height: 0.5;
-    text-align: center;
-  }
-  .fancy span {
-    display: inline-block;
-    position: relative;  
-  }
-  .fancy span:before,
-  .fancy span:after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    top: 0;
-    width: 55px;
-    @include tablet {
-      width: 100px;
-    }
-  }
-  .fancy span:before {
-    right: 100%;
-    margin-right: 15px;
-  }
-  .fancy span:after {
-    left: 100%;
-    margin-left: 15px;
-  }
+  // .fancy {
+  //   line-height: 0.5;
+  //   text-align: center;
+  // }
+  // .fancy span {
+  //   display: inline-block;
+  //   position: relative;  
+  // }
+  // .fancy span:before,
+  // .fancy span:after {
+  //   content: "";
+  //   position: absolute;
+  //   height: 5px;
+  //   border-bottom: 1px solid black;
+  //   border-top: 1px solid black;
+  //   top: 0;
+  //   width: 55px;
+  //   @include tablet {
+  //     width: 100px;
+  //   }
+  // }
+  // .fancy span:before {
+  //   right: 100%;
+  //   margin-right: 15px;
+  // }
+  // .fancy span:after {
+  //   left: 100%;
+  //   margin-left: 15px;
+  // }

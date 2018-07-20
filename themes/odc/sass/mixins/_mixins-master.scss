@@ -31,6 +31,7 @@
 /*              MEDIA QUERY                 */
 /********************************************/
 $tablet-width: 600px;
+$window-width: 640px;
 $desktop-width: 1240px; 
 
 @mixin tablet {
@@ -43,4 +44,9 @@ $desktop-width: 1240px;
    @media (min-width: $desktop-width) {
        @content;
    }
+}
+@mixin window {
+	@media (min-width: $window-width) {
+		@content;
+	}
 }
