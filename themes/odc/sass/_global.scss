@@ -63,16 +63,17 @@ p {
   }
 
 
-
+  span.wpcf7-not-valid-tip {
+    display: none;
+    padding-right: 4px;
+  }
 
   .wpcf7-form p{
     display: flex;
+    max-width: none;
     .wpcf7-email {
       width: 310px;
-      border-radius: 25px;
       color: #de4d61; 
-      text-transform: uppercase;
-      padding-left: 2rem;
     }
   }
   // .wpcf7-submit {
@@ -88,8 +89,7 @@ p {
     width: 100%;
   }
   input.wpcf7-submit {
-    border-radius: 30px;
-    transform: translateX(-100%);
+    padding-left: 4px;
     border: none;
     background: #A6B49B;
     color: white;

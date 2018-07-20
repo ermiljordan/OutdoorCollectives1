@@ -1100,24 +1100,24 @@ h3 {
     h3 {
       font-size: 1.5rem; } }
 
+span.wpcf7-not-valid-tip {
+  display: none;
+  padding-right: 4px; }
+
 .wpcf7-form p {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-width: none; }
   .wpcf7-form p .wpcf7-email {
     width: 310px;
-    border-radius: 25px;
-    color: #de4d61;
-    text-transform: uppercase;
-    padding-left: 2rem; }
+    color: #de4d61; }
 
 .wpcf7-form-control-wrap {
   width: 100%; }
 
 input.wpcf7-submit {
-  border-radius: 30px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  padding-left: 4px;
   border: none;
   background: #A6B49B;
   color: white;
