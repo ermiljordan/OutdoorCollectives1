@@ -24,6 +24,9 @@
 img.logo-circle {
   height: 15rem;
   width: auto;
+  @include desktop {
+    height: 18rem;
+  }
 }
 
 .zypher-tents {
@@ -89,6 +92,7 @@ img.logo-circle {
 }
 .content p{
   color: black;
+  padding-bottom: 2rem;
 }
 .stary-nights {
   border-bottom: 1px solid white;

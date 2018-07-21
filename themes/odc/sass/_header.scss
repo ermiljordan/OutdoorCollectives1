@@ -8,6 +8,10 @@
   width: 100vw;
   height: 65px;
   margin: 0 auto;
+  @include desktop {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
 }
 img.logo-header {
   display: flex;
