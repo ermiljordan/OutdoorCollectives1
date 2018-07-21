@@ -1001,15 +1001,42 @@ img.logo-circle {
             align-items: center;
     height: 50vh; } }
 
-@media (min-width: 1240px) {
-  .adventure-photos {
-    max-width: 50%; } }
+.adventure {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 1240px) {
+    .adventure .adventure-photos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 50%; } }
 
-@media (min-width: 1240px) {
-  .adventure-photos .right-caption {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    background: #222222; } }
+.right-caption {
+  display: none; }
+  @media (min-width: 600px) {
+    .right-caption {
+      display: none; } }
+  @media (min-width: 1240px) {
+    .right-caption {
+      display: unset;
+      width: 50%;
+      background-color: #222222;
+      padding-top: 3rem;
+      padding-bottom: 3rem; } }
+
+.adventure-cap {
+  padding-bottom: 3rem; }
+  @media (min-width: 1240px) {
+    .adventure-cap {
+      display: none; } }
 
 .header-background {
   background: rgba(255, 255, 255, 0.4); }
@@ -1047,12 +1074,20 @@ img.logo-header {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 10%; }
-  @media (min-width: 600px) {
-    .container {
-      padding: 0; } }
+  padding-bottom: 2rem; }
   @media (min-width: 1240px) {
     .container {
+      padding: 0 10%; } }
+
+.container-tent {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10%; }
+  @media (min-width: 600px) {
+    .container-tent {
+      padding: 0; } }
+  @media (min-width: 1240px) {
+    .container-tent {
       padding: 0 10%; } }
 
 h2 {
@@ -1078,7 +1113,7 @@ p {
   font-size: 15px;
   max-width: 80%;
   font-family: 'Novecento sans';
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
   margin: 0 auto;
   color: white;

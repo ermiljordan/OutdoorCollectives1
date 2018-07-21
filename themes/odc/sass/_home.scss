@@ -121,14 +121,34 @@ img.logo-circle {
     height: 50vh;
   }
 }
-.adventure-photos {
-  @include desktop {
-    max-width: 50%;
-  }
-  .right-caption {
+.adventure {
+  max-width: 100%;
+  display: flex;
+  .adventure-photos {
     @include desktop {
-      transform:translateX(100%);
-      background: #222222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
     }
   }
 }
+  .right-caption {
+    display: none;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: unset;
+      width: 50%;
+      background-color: #222222;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+  .adventure-cap {
+    padding-bottom: 3rem;
+    @include desktop {
+      display: none;
+    }
+  }

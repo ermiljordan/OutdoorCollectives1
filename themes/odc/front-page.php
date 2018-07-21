@@ -28,10 +28,9 @@ get_header(); ?>
       </section><!--HERO BANNER--> 
 	<section class="about-zypher container">
 			<h2>Zypher Air Frame Tent</h2>
-
 				<?php echo CFS()->get('zypher_air_frame_cap'); ?>
 	</section>
-	<section class="zypher-tents container">
+	<section class="zypher-tents container-tent">
 		<h2>Our Tents</h2>
 		<ul>
 		<?php 
@@ -63,9 +62,14 @@ get_header(); ?>
 	<section class="stary-nights">
 	<?php echo CFS()->get( 'stary_captions' ); ?>
 	</section>
-	<section class="adventure-photos">
-		<div class="right-caption">
+	<section class="adventure">
+		<div class="adventure-photos">
 		<?php echo CFS()->get ('adventure_caption' ); ?>
+		<div class="adventure-cap">
+		<?php echo CFS()->get ( 'adventure_content' ); ?>
+		</div>
+		</div>
+		<div class="right-caption">
 		<?php echo CFS()->get ( 'adventure_content' ); ?>
 		</div>
 	</section>

@@ -34,6 +34,7 @@ $tablet-width: 600px;
 $window-width: 640px;
 $desktop-width: 1240px; 
 
+
 @mixin tablet {
    @media (min-width: $tablet-width) {
        @content;
