@@ -70,6 +70,17 @@ function odc_dynamic_css() {
 						linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
 						url({$adventure}) no-repeat center bottom;
 						background-size: cover, cover;	
+				}";
+					break;
+		case is_page('subscribe'):
+				$subs = CFS()->get('subscribe_background');
+				$custom_css = " 
+				.sub-background {
+					background:
+					linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+					url({$subs}) no-repeat center bottom;
+					background-size: cover, cover;
+					height: 100vh;	
 				};";
 					break;
 					default:
