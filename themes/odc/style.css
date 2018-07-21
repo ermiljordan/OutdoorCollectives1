@@ -1018,6 +1018,9 @@ img.logo-circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100vw;
   height: 65px;
   margin: 0 auto; }
@@ -1040,15 +1043,6 @@ img.logo-header {
   background-color: transparent;
   border-bottom: 0;
   position: absolute; }
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100vh; }
 
 .container {
   max-width: 100%;
@@ -1086,7 +1080,6 @@ p {
   font-family: 'Novecento sans';
   font-weight: normal;
   font-style: normal;
-  padding: 0 1rem 1rem;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -1123,8 +1116,11 @@ span.wpcf7-not-valid-tip {
   display: flex;
   max-width: none; }
   .wpcf7-form p .wpcf7-email {
-    width: 310px;
+    width: 225px;
     color: #de4d61; }
+    @media (min-width: 1240px) {
+      .wpcf7-form p .wpcf7-email {
+        width: 331px; } }
 
 .wpcf7-form-control-wrap {
   width: 100%; }

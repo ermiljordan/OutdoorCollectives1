@@ -28,7 +28,7 @@
 			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' )); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<div class="header-background container">
+			<div class="header-background">
 				<div class="header">
 					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="logo-header" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg"></a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'odc' ); ?></button>

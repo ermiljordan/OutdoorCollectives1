@@ -1,16 +1,16 @@
-body {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-}
-// .site {
-//   flex: 1 0 auto;
+// body {
+//   display: flex;
+//   justify-content: center;
+//   min-height: 100vh;
 // }
-// .site-content {
-//   /*padding-top: 50px;*/
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+// // .site {
+// //   flex: 1 0 auto;
+// // }
+// // .site-content {
+// //   /*padding-top: 50px;*/
+// //   margin-left: auto;
+// //   margin-right: auto;
+// // }
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -47,7 +47,6 @@ p {
   font-family: 'Novecento sans';
   font-weight: normal;
   font-style: normal;
-  padding: 0 1rem 1rem;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -85,8 +84,11 @@ p {
     display: flex;
     max-width: none;
     .wpcf7-email {
-      width: 310px;
+      width: 225px;
       color: #de4d61; 
+      @include desktop {
+        width: 331px;
+      }
     }
   }
   // .wpcf7-submit {
