@@ -88,36 +88,36 @@ p {
     padding-right: 4px;
   }
 
-  .wpcf7-form p{
-    display: flex;
-    max-width: none;
-    .wpcf7-email {
-      width: 225px;
-      color: #de4d61; 
-      @include desktop {
-        width: 331px;
-      }
-    }
-  }
-  // .wpcf7-submit {
-  //   border-radius: 30px;
-  //   transform: translateX(-100%);
-  //   input[type="submit"] {
-  //     border: none;
-  //     background: #A6B49B;
-  //     color: white;
+  // .wpcf7-form p{
+  //   display: flex;
+  //   max-width: none;
+  //   .wpcf7-email {
+  //     width: 225px;
+  //     color: #de4d61; 
+  //     @include desktop {
+  //       width: 331px;
+  //     }
   //   }
   // }
-  .wpcf7-form-control-wrap {
-    width: 100%;
-  }
-  input.wpcf7-submit {
-    padding-left: 4px;
-    border: none;
-    background: #A6B49B;
-    color: white;
-    text-transform: uppercase;
-  }
+  // // .wpcf7-submit {
+  // //   border-radius: 30px;
+  // //   transform: translateX(-100%);
+  // //   input[type="submit"] {
+  // //     border: none;
+  // //     background: #A6B49B;
+  // //     color: white;
+  // //   }
+  // // }
+  // .wpcf7-form-control-wrap {
+  //   width: 100%;
+  // }
+  // input.wpcf7-submit {
+  //   padding-left: 4px;
+  //   border: none;
+  //   background: #A6B49B;
+  //   color: white;
+  //   text-transform: uppercase;
+  // }
   
   // FANCY LINES
 

@@ -21,8 +21,7 @@ get_header(); ?>
 						<img class="logo-circle" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveMiddle.svg" alt="outdoor collective">
 					</div>
 					<div class="newsletter">
-						<p class="sub-caption">Sign-up for subscription</p>
-						<?php echo do_shortcode('[contact-form-7 id="57" title="newsletter"]'); ?>
+						<p class="sub-caption"><a href="<?php the_permalink(72); ?>">Sign-up for subscription</a></p>					
 					</div><!--NEWS LETTER-->
 				</div><!--Logo banner-->
       </section><!--HERO BANNER--> 

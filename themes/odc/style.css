@@ -1155,28 +1155,6 @@ span.wpcf7-not-valid-tip {
   display: none;
   padding-right: 4px; }
 
-.wpcf7-form p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: none; }
-  .wpcf7-form p .wpcf7-email {
-    width: 225px;
-    color: #de4d61; }
-    @media (min-width: 1240px) {
-      .wpcf7-form p .wpcf7-email {
-        width: 331px; } }
-
-.wpcf7-form-control-wrap {
-  width: 100%; }
-
-input.wpcf7-submit {
-  padding-left: 4px;
-  border: none;
-  background: #A6B49B;
-  color: white;
-  text-transform: uppercase; }
-
 .site-info {
   background-color: #2A373C;
   text-align: center; }
@@ -1248,3 +1226,7 @@ img.logo-footer {
   src: url("../../asset/fonts/Merriweather/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../asset/fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("../../asset/fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../../asset/fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../../asset/fonts/Merriweather/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
+
+.post-56 .background {
+  background-color: black;
+  height: 100vh; }
