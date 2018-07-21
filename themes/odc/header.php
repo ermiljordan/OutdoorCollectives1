@@ -20,14 +20,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'odc' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header reverse-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' )); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="header-background container">
 				<div class="header">
 					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="logo-header" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg"></a>

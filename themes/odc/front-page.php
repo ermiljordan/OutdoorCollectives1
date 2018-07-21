@@ -12,8 +12,7 @@
  * @package outdoorCollective
  */
 
-get_header();
-?>
+get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <section class="hero-banner">
@@ -27,10 +26,7 @@ get_header();
 					</div><!--NEWS LETTER-->
 				</div><!--Logo banner-->
       </section><!--HERO BANNER--> 
-			
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<section class="about-zypher">
+	<section class="about-zypher container">
 			<h2>Zypher Air Frame Tent</h2>
 
 				<?php echo CFS()->get('zypher_air_frame_cap'); ?>
@@ -73,6 +69,8 @@ get_header();
 		<?php echo CFS()->get ( 'adventure_content' ); ?>
 		</div>
 	</section>
+	</main><!-- #main -->
+	</div><!-- #primary -->
 <?php
 get_sidebar();
 get_footer();

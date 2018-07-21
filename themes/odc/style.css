@@ -843,8 +843,7 @@ object {
 --------------------------------------------------------------*/
 .home
 .hero-banner {
-  height: 100%;
-  width: max-width;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -857,7 +856,7 @@ object {
   @media (min-width: 1240px) {
     .home
 .hero-banner {
-      height: 95vh; } }
+      height: 100vh; } }
 
 .sub-caption {
   text-align: center;
@@ -1013,15 +1012,15 @@ img.logo-circle {
     background: #222222; } }
 
 .header-background {
-  background-color: transparent; }
+  background: rgba(255, 255, 255, 0.4); }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  width: 100vw;
+  height: 65px;
+  margin: 0 auto; }
 
 img.logo-header {
   display: -webkit-box;
@@ -1036,6 +1035,20 @@ img.logo-header {
   margin-top: .5rem;
   margin-bottom: .5rem;
   height: 50px; }
+
+.site-header.reverse-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh; }
 
 .container {
   max-width: 100%;

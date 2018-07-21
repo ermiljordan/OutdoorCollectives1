@@ -1,12 +1,11 @@
 .home 
 .hero-banner {
-  height: 100%;
-  width: max-width;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   @include desktop {
-    height: 95vh;
+    height: 100vh
   }
 }
 .sub-caption {
