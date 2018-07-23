@@ -31,32 +31,35 @@ get_header(); ?>
 	</section>
 	<section class="zypher-tents container-tent">
 		<h2>Our Tents</h2>
-		<ul>
-		<?php 
-				$args = array(
-					'posts_per_page' 		=> 3,
-					'orderby'						=> 'date',
-					'order'							=> 'DESC',
-					'post_type'					=> 'post',
-					'post_status'				=> 'publish',
-					'suppress_filters' 	=> true
-				);
-				?>
-				<?php	$product_posts = get_posts( $args );?>
-				<?php foreach ($product_posts as $post ) : (
-							setup_postdata( $post ));  /// FIX THIS PART?>
-				<li>
-				<div class="thumbnail-tents">
-					<?php the_post_thumbnail( '' ); ?>
-				</div>
-				<div class="content">
-				<h3 class=fancy><span><?php the_title(); ?></span></h3>
-				<?php the_content(); ?>
-				<?php
-    endforeach; 
-    wp_reset_postdata(); ?>
-				</div>
-		</ul>
+<ul>
+	<li>
+		<div class="thumbnail-tents">
+			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+		</div>
+			<div class="content">
+				<h3>Zypher II</h3>
+					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+			</div>
+	</li>
+	<li>
+		<div class="thumbnail-tents">
+			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+		</div>
+			<div class="content">
+				<h3>Zypher IV</h3>
+					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+			</div>	
+	</li>
+	<li>
+		<div class="thumbnail-tents">
+			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+		</div>	
+			<div class="content">
+				<h3>Zypher VIII</h3>
+					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+			</div>
+	</li>
+</ul>
 	</section>
 	<section class="stary-nights">
 	<?php echo CFS()->get( 'stary_captions' ); ?>

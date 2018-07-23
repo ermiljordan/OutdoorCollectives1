@@ -922,18 +922,8 @@ img.logo-circle {
 
 .home .zypher-tents .thumbnail-tents {
   background-color: #e1e1e1;
-  height: 190px;
   overflow: hidden;
   position: relative; }
-  @media (min-width: 600px) {
-    .home .zypher-tents .thumbnail-tents {
-      height: 250px; } }
-  @media (min-width: 640px) {
-    .home .zypher-tents .thumbnail-tents {
-      height: 350px; } }
-  @media (min-width: 1240px) {
-    .home .zypher-tents .thumbnail-tents {
-      height: 190px; } }
   .home .zypher-tents .thumbnail-tents .wp-post-image {
     left: 50%;
     max-height: 250px;
@@ -952,6 +942,10 @@ img.logo-circle {
     @media (min-width: 1240px) {
       .home .zypher-tents .thumbnail-tents .wp-post-image {
         max-height: 250px; } }
+
+img.tents {
+  height: 100%;
+  width: 100%; }
 
 .content p {
   color: black;
